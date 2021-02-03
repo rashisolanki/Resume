@@ -1,0 +1,45 @@
+body{
+    position: relative;
+}
+.image{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px
+}
+.data1{
+    width: 230px;
+    background-color : #1c2833;
+    color: white; 
+    padding: 20px;
+}
+.tab{ 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto
+}
+.data2{
+    width: 450px;
+    background-color : #FDFEFE;
+    padding: 10px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.tab2{
+    
+    border-spacing: 30px 0;
+}
+.r{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+.test{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}

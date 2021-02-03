@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume Making</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body bgcolor="#D5D8DC">
+        <table class="tab">
+            <tr>
+                <td class="data1">
+                    <img src="profile.jpg" class="image">
+                    <h2>Personal details</h2><hr>
+                    <p>
+                        <b>Name:</b><br>
+                        Rashi Solanki<br><br>
+
+                        <b>Address:</b><br>
+                        Salisbury Park, Pune<br><br>
+
+                        <b>Email address:</b><br><br>
+                       <a href="mailto:rashisolanki2002@gmail.com">
+                            <img src="gmail.jpg" class="logo">
+                        </a><br><br>
+
+                        <b>Whatsapp:</b><br><br>
+                        <a href=https://wa.me/+919689095968>
+                            <img src="whatsapp .png" class="logo">
+                        </a><br><br>
+
+                        <b>Instagram:</b><br><br>
+                        <a href=https://www.instagram.com/solanki_rashi01>
+                            <img src="instagram.png" class="logo">
+                        </a><br><br>
+
+                        <b>Linked in:</b><br><br>
+                        <a href=https://www.linkedin.com/in/rashi-solanki-556772202/?lipi>
+                            <img src="linkedin.png" class="logo">
+                        </a><br><br>
+
+                    </p>
+                    <h2>Interests</h2><hr>
+                    Painting<br><br>
+                    Coding<br><br>
+                    Reading<br><br>
+                </td>
+
+                <td class="data2" align="left">
+                    <h1>Rashi Solanki</h1><hr>
+                    <p>
+                        <b>Objective:</b><br>
+                        To work in learning and challenging environment, utilizing my skill and knowledge
+                        to be the best of my abilities and contribute positively to my personal growth as 
+                        well as growth of the club/chapter.
+                    </p>
+
+                    <h2>Technical Knowledge</h2><hr>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>C++</li>
+                        <li>Python</li>    
+                        <li>Ms Excel</li>   
+                        <li>Ms Powerpoint</li>             
+                    </ul>
+
+                    <h2>Skills</h2><hr>
+                    <ul>
+                        <li>Ability to work under pressure.</li>
+                        <li>Quick learner.</li>
+                        <li>Self-motivated and consistent.</li>    
+                        <li>A good team player.</li>            
+                    </ul>
+
+                    <h2>Education</h2><hr>
+                    <table class="tab2">
+                        <tr>
+                            <th align="left">Year</th>
+                            <th>Degree/Course</th>
+                            <th>Grades</th>
+                        </tr>
+                        <tr>
+                            <td>2017-2018</td>
+                            <td>X SSC</td>
+                            <td>94%</td>
+                        </tr>
+                        <tr>
+                            <td>2019-2020</td>
+                            <td>XII HSC</td>
+                            <td>93.54%</td>
+                        </tr>
+                        <tr>
+                            <td>2020-2024</td>
+                            <td>B-Tech in CSE</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                    <br>
+                    
+                    <h2>Your Info</h2><hr>
+
+                    <label for="name"><b>Name</b></label>
+                    <input class = "r" type="text" id="name" name="name" placeholder="Enter name">
+                    <br><br>
+
+                    <label for="email"><b>Email</b></label>
+                    <input class = "r" type="email" id="email" name="email" placeholder="Enter email">
+                    <br><br>
+
+                    <label for="phoneno"><b>Phone no.</b></label>
+                    <input class = "r" type="tel" id="phoneno" name="email" placeholder="Enter phone no">
+                    <br><br>
+
+                    <button class="test" onclick="print()">Submit</button>
+                    
+                    
+<script>
+    let nme, email, phn;
+
+function ready()
+{
+nme = document.getElementById('name').value;
+email = document.getElementById('email').value;
+phn = document.getElementById('phoneno').value;
+}
+
+function print()
+{
+    ready();
+    if (nme=="" || email=="" || phn=="")
+    {
+      alert("Please enter all fields")  
+    }
+    else
+    {
+      if(email.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/) && (phn.match(/^[1-9][0-9]{9}$/)))
+      {
+        alert("Name: "+nme+"\n"+"Email id: "+email+"\n"+"Phone no.: "+phn)
+        document.getElementById('name').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById('phoneno').value = "";
+      }
+      else
+      {
+        if (email.match(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/))
+        {
+          alert("Invalid phone no.!!")
+          document.getElementById('phoneno').value = "";
+        }
+        else if (phn.match(/^[1-9][0-9]{9}$/))
+        {
+          alert("Invalid email id!!")
+          document.getElementById('email').value = "";
+        }
+        else
+        {
+          alert("Invalid email id and phone no.!!")
+          document.getElementById('email').value = "";
+          document.getElementById('phoneno').value = "";
+        }
+      } 
+    }
+}
+</script>
+
+                  
+                </td>
+
+            </tr>
+        </table> 
+    </body>
+</html>
